@@ -1,0 +1,36 @@
+import java.util.Scanner; 
+
+  
+
+class HelloWorld { 
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner(System.in); 
+
+         
+
+        float a, b, c; 
+
+  
+
+        System.out.print("Informe o valor de a:"); 
+
+        a = ler.nextFloat(); 
+
+        System.out.print("Informe o valor de b:"); 
+
+        b = ler.nextFloat(); 
+
+        c = a > b ? a : b;
+
+        if (c == a) {
+            System.out.println(c + " ");
+            System.out.println(b);
+        } else {
+            System.out.println(b + " ");
+            System.out.println(a);
+        }
+    } 
+
+}

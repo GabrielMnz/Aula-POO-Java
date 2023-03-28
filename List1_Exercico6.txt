@@ -1,0 +1,33 @@
+import java.util.Scanner; 
+
+  
+
+public class Helloworld { 
+
+  
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner(System.in); 
+
+        float b, a, perimetro, area; 
+
+         
+
+        System.out.print("Informe a largura: "); 
+
+        a = ler.nextFloat(); 
+
+        System.out.print("Informe o comprimento: "); 
+
+        b = ler.nextFloat(); 
+
+        area = a * b; 
+
+        perimetro = 2 * (a + b); 
+
+        System.out.printf("area: %.2f\nperimetro: %.2f ", area, perimetro );    
+
+    } 
+
+} 

@@ -1,0 +1,45 @@
+import java.util.Scanner; 
+
+  
+
+public class Helloworld { 
+
+  
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner(System.in); 
+
+        float NUM1, NUM2, SOMA, SUB, DIV, MULTI; 
+
+         
+
+        System.out.print("Informe 1º número: "); 
+
+        NUM1 = ler.nextFloat(); 
+
+        System.out.print("Informe 2º número: "); 
+
+        NUM2 = ler.nextFloat(); 
+
+        SOMA = NUM1 + NUM2; 
+
+        SUB = NUM1 - NUM2; 
+
+        DIV = NUM1 / NUM2; 
+
+        MULTI = NUM1* NUM2; 
+
+        System.out.printf("O somatorio é %.2f !!!%n", SOMA); 
+
+        System.out.printf("A subtração é %.2f !!!%n", SUB); 
+
+        System.out.printf("A divisão é %.2f !!!%n", DIV); 
+
+        System.out.printf("A multiplicação é %.2f !!!%n", MULTI); 
+
+         
+
+    } 
+
+} 

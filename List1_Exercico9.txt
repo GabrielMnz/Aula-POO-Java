@@ -1,0 +1,37 @@
+import java.util.Scanner; 
+
+  
+
+public class Helloworld { 
+
+  
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner(System.in); 
+
+        float real, dolar, euro, a, b; 
+
+         
+
+        System.out.print("Informe quantos reais possui: "); 
+
+        real = ler.nextFloat(); 
+
+        System.out.print("Informe o valor do dolar: "); 
+
+        dolar = ler.nextFloat(); 
+
+        System.out.print("Informe o valor do euro: "); 
+
+        euro = ler.nextFloat(); 
+
+        a = real / dolar; 
+
+        b = real / euro; 
+
+        System.out.printf("Vôce possui na conversão de real-dolar $%.2f\n Vôce possui na conversão real-euro $%.2f ", a, b);    
+
+    } 
+
+} 

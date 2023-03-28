@@ -1,0 +1,45 @@
+import java.util.Scanner; 
+
+  
+
+class HelloWorld { 
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner (System.in); 
+
+        String cod_Aluno;
+
+        float a, b, c, media;
+        
+        System.out.print("Informe o codigo do aluno: "); 
+
+        cod_Aluno = ler.nextLine();
+
+        System.out.print("Informe o valor de a: "); 
+
+        a = ler.nextFloat();
+
+        System.out.print("Informe o valor de b: "); 
+
+        b = ler.nextFloat(); 
+
+        System.out.print("Informe o valor de c: "); 
+
+        c = ler.nextFloat();
+
+        if (a > b && a > c) { 
+            media = (a * 4 + b * 3 + c * 3) / (4 + 3 + 3);
+            String d = media >= 7 ? "Aprovado" : (media >= 5 ? "Prova Final" : "Reprovado");
+            System.out.printf("Media : %.2f - Situacao %s", media, d);
+        } else if (b > a && b > c) { 
+            media = (b * 4 + a * 3 + c * 3) / (4 + 3 + 3);
+            String d = media >= 7 ? "Aprovado" : (media >= 5 ? "Prova Final" : "Reprovado");
+            System.out.printf("Media : %.2f - Situacao %s", media, d);
+        } else { 
+            media = (c * 4 + b * 3 + a * 3) / (4 + 3 + 3);
+            String d = media >= 7 ? "Aprovado" : (media >= 5 ? "Prova Final" : "Reprovado");
+            System.out.printf("Media : %.2f - Situacao %s", media, d);
+        }
+    } 
+}

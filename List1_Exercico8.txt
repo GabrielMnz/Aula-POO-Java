@@ -1,0 +1,37 @@
+import java.util.Scanner; 
+
+  
+
+public class Helloworld { 
+
+  
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner(System.in); 
+
+        float km, kmpl, valorL, a, b; 
+
+         
+
+        System.out.print("Informe quantos km/L seu veiculo faz: "); 
+
+        kmpl = ler.nextFloat(); 
+
+        System.out.print("Informe a distância em km: "); 
+
+        km = ler.nextFloat(); 
+
+        System.out.print("Informe o valor do litro do combustível: "); 
+
+        valorL = ler.nextFloat(); 
+
+        a = km / kmpl; 
+
+        b = valorL * a; 
+
+        System.out.printf("Valor gasto de combustível em reais é: R$%.2f ", b);    
+
+    } 
+
+} 

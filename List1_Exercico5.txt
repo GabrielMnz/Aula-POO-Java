@@ -1,0 +1,29 @@
+import java.util.Scanner; 
+
+  
+
+public class Helloworld { 
+
+  
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner(System.in); 
+
+        float TEMPC, TEMPF; 
+
+         
+
+        System.out.print("Informe a temperatura: "); 
+
+        TEMPC = ler.nextFloat(); 
+
+        TEMPF = (9 * TEMPC + 160) / 5; 
+
+        System.out.printf("Temperatura em Farenheitn Fº: %.2f ", TEMPF); 
+
+         
+
+    } 
+
+} 

@@ -1,0 +1,85 @@
+import java.util.Scanner; 
+
+  
+
+class HelloWorld { 
+
+    public static void main(String[] args) { 
+
+        Scanner ler = new Scanner (System.in); 
+
+         
+
+        float a, b, c; 
+
+        System.out.print("Informe o valor de a: "); 
+
+        a = ler.nextFloat(); 
+
+        System.out.print("Informe o valor de b: "); 
+
+        b = ler.nextFloat(); 
+
+        System.out.print("Informe o valor de c: "); 
+
+        c = ler.nextFloat(); 
+
+         
+
+        if (a >= b) { 
+
+            if (a >= c) { 
+
+                if (b >= c) { 
+
+                    System.out.print(a + " " + b + " " + c); 
+
+System.out.print("%d, %d, %d", a, b, c);************ 
+
+                } else { 
+
+                    //System.out.printf(a, c, b); 
+
+                    System.out.print(a + " " + c + " " + b); 
+
+                } 
+
+            } else { 
+
+                //System.out.printf(c, a, b); 
+
+                System.out.print(c + " " + a + " " + b); 
+
+            } 
+
+        } else { 
+
+            if (b >= c) { 
+
+                if (a >= c) { 
+
+                    //System.out.printf(b, a, c); 
+
+                    System.out.print(b + " " + a + " " + c); 
+
+                } else { 
+
+                    //System.out.printf(b, c, a); 
+
+                    System.out.print(b + " " + c + " " + a); 
+
+                } 
+
+            } else { 
+
+                //System.out.printf(c, b, a); 
+
+                System.out.print(c + " " + b + " " + a); 
+
+            } 
+
+        } 
+
+    } 
+
+} 
