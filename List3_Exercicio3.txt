@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        
+        int totalvotos, branco, nulos, validos;
+        
+        System.out.print("Digite o total de eleitores: ");
+        totalvotos = read.nextInt();
+        System.out.println("Digite os votos ");
+        System.out.print("Brancos: ");
+        branco = read.nextInt();
+        System.out.print("Nulos: ");
+        nulos = read.nextInt();
+        validos = totalvotos - branco - nulos;
+        System.out.printf("Brancos: %d", validos);
+    }
+}
