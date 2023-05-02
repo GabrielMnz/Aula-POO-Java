@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        
+        float totalvotos, branco, nulos, validos;
+        
+        System.out.print("Digite o total de eleitores: ");
+        totalvotos = read.nextFloat();
+        System.out.println("Digite os votos ");
+        System.out.print("Brancos: ");
+        branco = read.nextFloat();
+        branco = branco / totalvotos;
+        System.out.print("Nulos: ");
+        nulos = read.nextFloat();
+        nulos = nulos / totalvotos;
+        validos = (totalvotos - totalvotos * (branco + nulos)) / totalvotos;
+        System.out.printf("Branco: %.2f \nNulos: %.2f \nValidos: %.2f ", branco, nulos, validos);
+    }
+}

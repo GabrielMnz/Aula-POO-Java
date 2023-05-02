@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
+        int a, npositivo = 0, nnegativo = 0;
+        do {
+            System.out.print("Digite um numero (ou zero para sair): ");
+            a = read.nextInt();
+            if (a > 0) {
+                npositivo++;
+            } else if(a < 0) {
+                nnegativo++;
+            }
+        }
+        while (a != 0);
+        System.out.printf("Positivo e %d%n", npositivo);
+        System.out.printf("Negativo e %d", nnegativo);
+        
+    
+    }
+}

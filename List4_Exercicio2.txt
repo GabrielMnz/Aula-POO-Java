@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
+        int a, b[], c, i = 0, sum = 0, media;
+        System.out.print("Informe quantos valores deseja: ");
+        a = read.nextInt();
+        b = new int [a];
+        while (i < a) {
+            System.out.print("Informe os valores para a soma: ");
+            c = read.nextInt();
+            b[i] = c;
+            sum += b[i];
+            i++;
+        }
+        media = sum /a;
+        System.out.printf("Soma e %d%n", sum);
+        System.out.printf("Media e %d", media);
+        
+    
+    }
+}

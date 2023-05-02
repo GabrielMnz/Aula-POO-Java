@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
+        String cod;
+        float n1, n2, n3, media;
+        do {
+            System.out.println("Digite codigo do aluno (ou 0(zero) para sair): ");
+            cod = read.nextLine();
+            System.out.println("Digite as notas do aluno:\n");
+            n1 = read.nextFloat();
+            n2 = read.nextFloat();
+            n3 = read.nextFloat();
+            media = (4 * n1 + 3 * n2 + 3 * n3) / 10;
+            if (media >= 6) {
+                System.out.println(cod);
+                System.out.println("Aprovado");
+            } else {
+                System.out.println(cod);
+                System.out.println("Reprovado");
+            }
+            
+        }
+        while (cod != "0" || cod != "zero");
+    }
+}

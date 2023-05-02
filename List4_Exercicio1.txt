@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
+        int a, b, c;
+        do {
+            System.out.print("Informe o valor: ");
+            a = read.nextInt();
+            System.out.print("Informe o valor: ");
+            b = read.nextInt();
+            if (a >= 0 && b >= 0) {
+                c = a + b;
+            System.out.println(c);
+            }
+        }
+        while (a >= 0 && b >= 0);
+            System.out.print("ERROR\n Operacao invalida!");
+    }
+}
