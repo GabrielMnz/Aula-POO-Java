@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+/*
+Codigo  Especificacao   Preco unitario
+100     Cachorro quente 1,10 
+101     Bauru simples   1,30 
+102     Bauru c/ovo     1,50 
+103     Hamburger       1,10 
+104     Cheeseburger    1,30 
+105     Refrigerante    1,00
+*/
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
+        int cod, qt;
+        double valor;
+        String v;
+        System.out.print("Digite codigo o do produto: ");
+        cod = read.nextInt();
+        System.out.print("Digite a quantidade do produto: ");
+        qt = read.nextInt();
+        switch (cod) {
+            case 100:
+                valor = 1.1 * qt;
+                v = "Cachorro Quente";
+                System.out.printf("%s, valor: R$ %d", v, valor);
+                break;
+            case 101:
+                valor = qt * 1.3;
+                v = "Bauru Simples";
+                System.out.printf("%s, valor: R$%d", v, valor);
+                break;
+            case 102:
+                valor = qt * 1.5;
+                v = "Bauru c/ ovo";
+                System.out.printf("%s, valor: R$%d", v, valor);
+                break;
+            case 103:
+                valor = qt * 1.1;
+                v = "Hamburger";
+                System.out.printf("%s, valor: R$%d", v, valor);
+                break;
+            case 104:
+                valor = qt * 1.3;
+                v = "Cheeseburger";
+                System.out.printf("%s, valor: R$%d", v, valor);
+                break;
+            case 105:
+                valor = qt * 1.0;
+                v = "Refrigerante";
+                System.out.printf("%s, valor: R$%d", v, valor);
+                break;
+            default:
+            System.out.print("Invalido");
+        }
+    }
+}

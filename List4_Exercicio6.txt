@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+/*
+Codigo  Cargo       Percentual
+101     Gerente     10% 
+101     Engenheiro  20%
+102     Tecnico     30%
+*/
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner read = new Scanner (System.in);
+        int cod;
+        double salarioant, salarionv, sub;
+        String v;
+        System.out.print("Digite codigo o do cargo: ");
+        cod = read.nextInt();
+        System.out.print("Digite o salario: ");
+        salarioant = read.nextDouble();
+        switch (cod) {
+            case 101:
+                salarionv = salarioant + (salarioant * 0.1);
+                v = "Gerente";
+                System.out.printf("%s, valor: R$ %d", v, salarionv);
+                sub = salarionv - salarioant;
+                System.out.printf("Diferenca salarial e R$ %d", sub);
+                break;
+            case 102:
+                salarionv = salarioant + (salarioant * 0.2);
+                v = "Gerente";
+                System.out.printf("%s, valor: R$%d", v, salarionv);
+                sub = salarionv - salarioant;
+                System.out.printf("Diferenca salarial e R$ %d", sub);
+                break;
+            case 103:
+                salarionv = salarioant + (salarioant * 0.3);
+                v = "Tecnico";
+                System.out.printf("%s, valor: R$%d", v, salarionv);
+                sub = salarionv - salarioant;
+                System.out.printf("Diferenca salarial e R$ %d", sub);
+                break;
+            default:
+            salarionv = salarioant + (salarioant * 0.4);
+            sub = salarionv - salarioant;
+            System.out.printf("Cargo desconhecido, aumento 40%");
+            System.out.printf("Diferenca salarial e R$" + sub);
+            
+        }
+    }
+}
